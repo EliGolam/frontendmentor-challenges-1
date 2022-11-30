@@ -1,9 +1,15 @@
 <script setup>
-import TheWelcome from '../components/TheWelcome.vue'
+import AppHeader from '@/components/AppHeader.vue';
+import WelcomeSection from '@/components/WelcomeSection.vue';
 </script>
 
 <template>
-  <main>
-    <TheWelcome />
-  </main>
+  <div>
+    <AppHeader title="Front End Mentor Challenges" />
+
+    <main>
+      <WelcomeSection />
+    </main>
+    
+  </div>
 </template>

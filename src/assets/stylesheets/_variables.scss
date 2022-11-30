@@ -1,0 +1,59 @@
+
+/* Color Scheme */
+@import '_color-scheme.scss';
+
+// Size
+$fs-1: calc(1.5rem + 2vw);
+$fs-2: calc(.8rem + 1.5vw);
+$fs-3: calc(.6rem + 1.5vw);
+$fs-4: calc(.3rem + 1.5vw);
+$fs-5: calc(.25rem + 1.3vw);
+$fs-6: .9rem;
+$fs-7: .8rem;
+$fs-8: .7rem;
+$fs-9: .6rem;
+
+// Weight
+$fw-black: 900;
+$fw-extra-bold: 800;
+$fw-bold: 700;
+$fw-semi-bold: 600;
+$fw-medium: 500;
+$fw-regular: 400;
+$fw-light: 300;
+$fw-extra-light: 200;
+$fw-thin: 100;
+
+/* SIZES */
+$max-w-container: 1700px;
+
+// BREAKPOINTS
+$sm-breakpoint: 576px;
+$md-breakpoint: 768px;
+$lg-breakpoint: 992px;
+$xl-breakpoint: 1200px;
+$xxl-breakpoint: 1400px; 
+
+
+/* SPACING */
+$_size-1: .8rem;
+$_size-2: 1rem;
+$_size-3: 1.3rem;
+$_size-4: 1.8rem;
+$_size-5: 2rem;
+$_size-6: 2.5rem;
+$_size-7: 3rem;
+$_size-8: 4rem;
+$_size-9: 5rem;
+$_size-10: 7rem;
+
+
+/* Animation Speed */ 
+$_speed-1: 200ms;
+$_speed-2: 250ms;
+$_speed-3: 300ms;
+$_speed-4: 400ms;
+$_speed-5: 500ms;
+
+/* Cubic Beziers */ 
+$_cubicB-bounce: cubic-bezier(.03,-0.45,.5,2.5);

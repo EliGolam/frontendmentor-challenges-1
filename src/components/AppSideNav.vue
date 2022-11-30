@@ -1,6 +1,6 @@
 <template>
-  <nav>
-    <ul>
+  <nav id="side-nav" class="side-nav" role="navigation">
+    <ul id="nav-list" class="nav-list">
       <li><RouterLink to="/">Home</RouterLink></li>
       <li><RouterLink to="/about">About</RouterLink></li>
     </ul>

@@ -1,0 +1,11 @@
+.side-nav {
+  display: none;
+
+  &.active {
+    display: block;
+  }
+
+  @media only screen and (min-width: $md-breakpoint) {
+    display: block;
+  }
+}
