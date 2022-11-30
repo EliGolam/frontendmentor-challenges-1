@@ -7,7 +7,7 @@ import WelcomeSection from '@/components/WelcomeSection.vue';
   <div>
     <AppHeader title="Front End Mentor Challenges" />
 
-    <main>
+    <main class="main-content">
       <WelcomeSection />
     </main>
     

@@ -31,7 +31,3 @@ import navLinks from '@/assets/data/nav-links.json';
     }, 
   }
 </script>
-
-<style lang="scss" scoped>
-
-</style>
