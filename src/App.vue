@@ -1,5 +1,6 @@
 <script setup>
 import AppSideNav from './components/AppSideNav.vue';
+import SideNavToggle from './components/SideNavToggle.vue';
 </script>
 
 <template>
@@ -9,7 +10,7 @@ import AppSideNav from './components/AppSideNav.vue';
     <RouterView class="flex-grow page-view" />
 
     <!-- Side Nav -->
-    
+    <SideNavToggle :nav-open="navOpen"  />
     <AppSideNav :class="{ active : navOpen }" />
   </div>
 </template>

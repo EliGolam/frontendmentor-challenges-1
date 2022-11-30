@@ -9,3 +9,9 @@
     display: block;
   }
 }
+
+.side-nav-toggle {
+  @media only screen and (min-width: $md-breakpoint) {
+    display: none;
+  }
+}
