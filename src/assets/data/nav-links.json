@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Home",
+    "path": "/"
+  },
+  {
+    "name": "Challenge 1: Product Preview Card",
+    "path": "/product-preview-card"
+  },
+  {
+    "name": "About Me",
+    "path": "/about"
+  }
+]

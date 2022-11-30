@@ -6,13 +6,6 @@ import AppSideNav from '@/components/AppSideNav.vue';
   <div class="flex row-reverse content-between">
     <!-- Router Views -->
     <RouterView class="flex-grow page-view container" />
-
-    
-    <!-- Side Nav -->
-    <!-- <SideNavToggle 
-      :nav-open="navOpen" 
-      @toggleSideNav="(toggle) => navOpen = toggle" 
-    /> -->
     
     <AppSideNav />
   </div>

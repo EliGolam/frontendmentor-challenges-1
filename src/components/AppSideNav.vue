@@ -1,5 +1,7 @@
 <script setup>
 import SideNavToggle from '@/components/SideNavToggle.vue';
+
+import navLinks from '@/assets/data/nav-links.json';
 </script>
 
 
@@ -11,8 +13,9 @@ import SideNavToggle from '@/components/SideNavToggle.vue';
     />
 
     <ul id="nav-list" class="nav-list">
-      <li><RouterLink to="/">Home</RouterLink></li>
-      <li><RouterLink to="/about">About</RouterLink></li>
+      <li v-for="link in navLinks">
+        <RouterLink :to="link.path">{{ link.name }}</RouterLink>
+      </li>
     </ul>
   </nav>
 </template>
@@ -23,6 +26,7 @@ import SideNavToggle from '@/components/SideNavToggle.vue';
     data() {
       return {
         navOpen: false,
+        navLinks: navLinks,
       }
     }, 
   }
