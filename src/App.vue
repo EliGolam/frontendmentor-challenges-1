@@ -10,7 +10,7 @@ import SideNavToggle from './components/SideNavToggle.vue';
     <RouterView class="flex-grow page-view" />
 
     <!-- Side Nav -->
-    <SideNavToggle :nav-open="navOpen"  />
+    <SideNavToggle :nav-open="navOpen" @toggleSideNav="(toggle) => navOpen = toggle" />
     <AppSideNav :class="{ active : navOpen }" />
   </div>
 </template>
@@ -23,11 +23,11 @@ export default {
     }
   }, 
 
-  methods: {
-    toggleNav() {
-      this.navOpen = !this.navOpen;
-    }
-  }
+  // methods: {
+  //   toggleSideNav() {
+  //     this.navOpen = !this.navOpen;
+  //   }
+  // }
 }
 </script>
 

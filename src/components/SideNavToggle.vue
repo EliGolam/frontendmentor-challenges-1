@@ -1,7 +1,12 @@
 <template>
   <div class="side-nav-toggle">
-    <font-awesome-icon icon="fa-solid fa-angle-left" v-if="navOpen" />
-    <font-awesome-icon icon="fa-solid fa-bars" v-else />
+    <button v-if="navOpen" @click="toggleSideNav()">
+      <font-awesome-icon icon="fa-solid fa-angle-left" />
+    </button>
+
+    <button v-else @click="toggleSideNav()">
+      <font-awesome-icon icon="fa-solid fa-bars" />
+    </button>
   </div>
 </template>
 
@@ -15,6 +20,12 @@ export default {
 
   props: {
     navOpen: Boolean,
+  },
+
+  methods: {
+    toggleSideNav() {
+      this.$emit('toggleSideNav', !this.navOpen); 
+    }
   }
 }
 </script>
