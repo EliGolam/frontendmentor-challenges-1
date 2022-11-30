@@ -11,4 +11,7 @@ $ff-default: 'Josefin Sans', $ff-fallback;
 body {
   // FONTS
   font-family: $ff-default;
+
+  // Defaults
+  min-height: 100vh;
 }

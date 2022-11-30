@@ -1,7 +1,7 @@
 <template>
   <div class="side-nav-toggle">
     <button v-if="navOpen" @click="toggleSideNav()">
-      <font-awesome-icon icon="fa-solid fa-angle-left" />
+      <font-awesome-icon icon="fa-solid fa-angle-right" />
     </button>
 
     <button v-else @click="toggleSideNav()">

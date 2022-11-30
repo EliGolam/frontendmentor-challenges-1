@@ -1,17 +1,50 @@
 .side-nav {
-  display: none;
-
-  &.active {
-    display: block;
-  }
-
-  @media only screen and (min-width: $md-breakpoint) {
-    display: block;
-  }
-}
-
-.side-nav-toggle {
-  @media only screen and (min-width: $md-breakpoint) {
+  .nav-list {
     display: none;
+
+    // Content
+    padding: 1rem;
   }
+
+  .side-nav-toggle {
+    position: absolute;
+      top: 2rem;
+      left: -1rem;
+      z-index: 10;
+  }
+
+  // Mobile
+  @media only screen and (max-width: $md-breakpoint) {
+    position: fixed;
+
+    // Size
+    width: 0%;
+    height: 100%;
+
+    // Active
+    &.active {
+      width: 75%;
+
+      .nav-list {
+        display: block;
+      }
+    }
+  }
+  
+  // Desktop and Tablet
+  @media only screen and (min-width: $md-breakpoint) {
+    flex-basis: 20%;
+
+    .nav-list {
+      display: block;  
+    }
+  
+    .side-nav-toggle {
+      display: none;
+    }
+  }
+  
+
+  // DEBUG
+  /* background-color: red; */
 }
